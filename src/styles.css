@@ -19,8 +19,8 @@ body {
 }
 
 .xp-start-button {
-  width: 100px; /* Keep this as is - seems correct */
-  height: 80px; /* Keep this as is - seems correct */
+  width: 100px; 
+  height: 80px; 
   background-image: url('startlogo.png');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -28,10 +28,43 @@ body {
   position: relative;
   top: -12px;
 }
+
 .xp-start-button:hover {
-  background-position: 0 -108px;
+  background-position: 0 -54px;
 }
 
 .xp-start-button:active {
-  background-position: 0 -56px; 
+  background-position: 0 -108px; 
+}
+
+.desktop {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-auto-rows: 90px;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 30px);
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.desktop-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.desktop-icon span {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 11px;
+  margin-top: 5px;
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
